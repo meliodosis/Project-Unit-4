@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which JoJo's Bizarre Adventure Character Are You?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Which JoJo's Bizarre Adventure Character Are You?</h1>
+        <form id="quizForm">
+            <div class="question" id="question1">
+                <h2>Question 1: What's your favorite color?</h2>
+                <input type="radio" id="red" name="question1" value="Jotaro" required>
+                <label for="red">Red</label><br>
+                <input type="radio" id="blue" name="question1" value="Joseph">
+                <label for="blue">Blue</label><br>
+                <input type="radio" id="green" name="question1" value="Dio">
+                <label for="green">Green</label><br>
+                <input type="radio" id="black" name="question1" value="Giorno">
+                <label for="black">Black</label><br>
+                <button type="button" class="nextBtn" onclick="nextQuestion(1)">Next</button>
+            </div>
+
+            <div class="question" id="question2" style="display:none;">
+                <h2>Question 2: What's your preferred fighting style?</h2>
+                <input type="radio" id="punch" name="question2" value="Jotaro" required>
+                <label for="punch">Punching</label><br>
+                <input type="radio" id="trick" name="question2" value="Joseph">
+                <label for="trick">Trickery</label><br>
+                <input type="radio" id="power" name="question2" value="Dio">
+                <label for="power">Overwhelming Power</label><br>
+                <input type="radio" id="tactics" name="question2" value="Giorno">
+                <label for="tactics">Tactics</label><br>
+                <button type="button" class="prevBtn" onclick="prevQuestion(2)">Previous</button>
+                <button type="button" class="nextBtn" onclick="nextQuestion(2)">Next</button>
+            </div>
+
+            <div class="question" id="question3" style="display:none;">
+                <h2>Question 3: What's your favorite hobby?</h2>
+                <input type="radio" id="reading" name="question3" value="Jotaro" required>
+                <label for="reading">Reading</label><br>
+                <input type="radio" id="traveling" name="question3" value="Joseph">
+                <label for="traveling">Traveling</label><br>
+                <input type="radio" id="scheming" name="question3" value="Dio">
+                <label for="scheming">Scheming</label><br>
+                <input type="radio" id="helping" name="question3" value="Giorno">
+                <label for="helping">Helping Others</label><br>
+                <button type="button" class="prevBtn" onclick="prevQuestion(3)">Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="result" class="result"></div>
+        <div id="resultImage" class="resultImage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
